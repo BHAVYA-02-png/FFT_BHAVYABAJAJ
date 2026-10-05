@@ -1,0 +1,262 @@
+<html>
+
+<head>
+
+    <title>Transitions and Animations</title>
+
+    <style>
+            .container{                
+                 display: grid;              
+                 grid-template-columns: repeat(3, 1fr);                 
+                 padding: 20px;                 
+                 border: 5px solid #333;                 
+                 border-radius: 10px;                 
+                 box-shadow: 5px 5px 15px gray;                
+                 width: 1000px;                
+                 height: 700px;                 
+                 margin: auto;                 
+                 justify-items: center;                             
+                } 
+        button {
+
+            margin-left: 130px;
+            width: 100px;
+            height: 50px;
+            background-color: rgb(233, 150, 48);
+            border: none;
+            border-radius: 50px;
+            transition: 1s;
+        }
+
+        button:hover {
+
+            background-color: rgb(37, 209, 106);
+            transform: scale(1.1);
+        }
+
+
+        .b1 {
+            margin-left: 130px;
+            width: 100px;
+            height: 50px;
+            background-color: rgb(224, 41, 188);
+            border: none;
+            border-radius: 3px;
+            transition: 1s;
+
+
+        }
+
+        .b1:hover {
+
+            background-color: rgb(168, 92, 240);
+            transform: scale(1.1);
+        }
+
+        .b2 {
+
+            margin-left: 130px;
+            width: 100px;
+            height: 50px;
+            background-color: rgb(233, 214, 11);
+            border: none;
+            border-radius: 7px;
+            transition: 1s;
+
+        }
+
+        .b2:hover {
+
+            background-color: rgb(64, 62, 62);
+            transform: scale(1.1);
+        }
+
+        .b3 {
+
+            margin-left: 130px;
+            width: 100px;
+            height: 50px;
+            background-color: rgb(237, 37, 47);
+            border: none;
+            border-radius: 70px;
+            transition: 1s;
+        }
+
+        .b3:hover {
+
+            background-color: bisque;
+            transform: scale();
+        }
+
+        .box {
+
+            width: 100px;
+            height: 100px;
+            background-color: rgb(211, 117, 23);
+            /* animation-name: nikhil;
+            animation-delay: 1s;
+            animation-timing-function: ease;
+            animation-duration: 2s;
+            animation-iteration-count: infinite; */
+            animation: nikhil 1s ease alternate infinite;
+
+        }
+
+        .box2 {
+            margin-left: 130px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(159, 152, 254);
+            border-radius: 100%;
+            animation: hello 3s ease-out 2s alternate infinite;
+        }
+
+        .box3 {
+            display: flex;
+            width: 100px;
+            margin-left: 350px; 
+            height: 100px;
+            background-color: rgb(187, 199, 99);
+            border-radius: 1%;
+            animation: hi 0.5s ease-in-out 2s alternate infinite;
+
+
+        }
+
+        .box4 {
+
+            display: flex;
+            width: 100px;
+            margin-left: 350px;
+            height: 150px;
+            background-color: rgb(248, 121, 99);
+            border-radius: 1%;
+            animation: bye 2s ease-in 2s alternate infinite;
+
+
+        }
+
+        .load {
+            margin-left: 100px;
+            margin-bottom: 80px;
+            width: 100px;
+            height: 100px;
+            border: 5px solid gray;
+            border-radius: 50%;
+            border-top: solid blue;
+            animation: spin 1s linear infinite;
+        }
+
+        .load1 {
+            margin-left: 150px;
+            margin-bottom: 80px;
+            width: 100px;
+            height: 100px;
+            border: 10px solid rgb(242, 119, 215);
+            border-radius: 1%;
+            border-top: solid rgb(226, 227, 147);
+            animation: spin1 1s linear infinite;
+        }
+
+        .load2 {
+            margin-left: 250px;
+            margin-bottom: 80px;
+            width: 100px;
+            height: 100px;
+            border: 10px solid rgb(233, 111, 176);
+            border-radius: 100px;
+            border-top: solid rgb(9, 9, 0);
+            animation: spin2 1s linear infinite;
+
+
+        }
+
+        @keyframes spin2 {
+
+
+            to {
+
+                transform: rotate(360deg);
+            }
+
+        }
+
+        @keyframes spin1 {
+
+            to {
+
+                transform: rotate(360deg);
+            }
+        }
+
+
+
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes bye {
+
+            to {
+
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes hi {
+
+            to {
+
+                transform: rotate(90deg);
+            }
+
+
+
+        }
+
+        @keyframes hello {
+
+            to {
+
+                transform: scale(0);
+            }
+        }
+
+
+        @keyframes nikhil {
+
+            to {
+
+                transform: scale(0);
+            }
+
+            from {
+
+                transform: scale(300px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Transitions & Animations</h1>
+        <button class="b1">Action</button>
+        <button class="b2">Action</button>
+        <button class="b3">Action</button>
+        <button class="b4">Action</button>
+        <div class="box"></div><br>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="load"></div>
+        <div class="load1"></div>
+        <div class="load2"></div>
+ </div>
+</body>
+
+</html>
