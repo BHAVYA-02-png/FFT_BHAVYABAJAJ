@@ -1,111 +1,736 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Bhavya Bajaj Portfolio</title>
+<head>
 
-        <style>
-            h1{
+    <title>Mahi Jain Portfolio</title>
+
+    <style>
+
+        body {
+            font-family: Arial;
+            margin: 0;
+            background-color: #f4f4ff;
+        }
+
+        /* Navigation */
+
+        nav {
+            background: linear-gradient(90deg, #4b0082, #6a5acd, #0077ff);
+            color: white;
+            padding: 20px;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        nav h2 {
+            margin: 0;
+        }
+
+        nav ul {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            list-style: none;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+
+        /* Home */
+
+        .home {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 80px;
+
+            background: linear-gradient(
+                135deg,
+                #e0c3fc,
+                #8ec5fc
+            );
+        }
+
+        .home h1 {
+            font-size: 45px;
+            color: #4b0082;
+        }
+
+        .home p {
+            font-size: 18px;
+            color: #222;
+        }
+
+        .photo {
+            display: grid;
+            place-items: center;
+            font-size: 100px;
+
+            animation: move 2s infinite alternate;
+        }
+
+
+        /* About */
+
+        .about {
+            padding: 50px;
+            text-align: center;
+
+            background-color: #fff0f6;
+        }
+
+        .about h2 {
+            color: #d63384;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: 15px auto;
+            line-height: 1.6;
+        }
+
+
+        /* Skills */
+
+        #skills {
+            background-color: #eef7ff;
+            padding-top: 30px;
+        }
+
+        #skills h2 {
+            color: #0077b6;
+        }
+
+        .skills {
+            padding: 50px;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .skill {
+            background: linear-gradient(
+                135deg,
+                #a1c4fd,
+                #c2e9fb
+            );
+
+            padding: 30px;
+            text-align: center;
+            border-radius: 15px;
+        }
+
+        .skill:hover {
+            transform: scale(1.05);
+        }
+
+
+        /* Education */
+
+        #education {
+            background-color: #fffbea;
+            padding-top: 30px;
+        }
+
+        #education h2 {
+            color: #ff7b00;
+        }
+
+        .education {
+            padding: 50px;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .education-box {
+            background: linear-gradient(
+                135deg,
+                #ffecd2,
+                #fcb69f
+            );
+
+            padding: 30px;
+            text-align: center;
+            border-radius: 15px;
+        }
+
+        .education-box:hover {
+            transform: scale(1.05);
+        }
+
+
+        /* Certifications */
+
+        #certifications {
+            background-color: #f5f0ff;
+            padding-top: 30px;
+        }
+
+        #certifications h2 {
+            color: #7b2cbf;
+        }
+
+        .certifications {
+            padding: 50px;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .certificate {
+            background: linear-gradient(
+                135deg,
+                #d9afd9,
+                #97d9e1
+            );
+
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .certificate:hover {
+            transform: scale(1.05);
+        }
+
+
+        /* Experience */
+
+        #experience {
+            background-color: #eefcf5;
+            padding-top: 30px;
+        }
+
+        #experience h2 {
+            color: #198754;
+        }
+
+        .experience {
+            padding: 50px;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .experience-box {
+            background: linear-gradient(
+                135deg,
+                #c6ffdd,
+                #fbd786
+            );
+
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .experience-box:hover {
+            transform: scale(1.05);
+        }
+
+
+        /* Activities */
+
+        .activities {
+            padding: 50px;
+            text-align: center;
+
+            background-color: #fff0f6;
+        }
+
+        .activities h2 {
+            color: #d63384;
+        }
+
+        .activities li {
+            margin: 12px;
+        }
+
+
+        /* Contact */
+
+        .contact {
+            background: linear-gradient(
+                90deg,
+                #667eea,
+                #764ba2
+            );
+
+            color: white;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            color: yellow;
+        }
+
+
+        /* Animation */
+
+        @keyframes move {
+
+            from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(20px);
+            }
+
+        }
+
+
+        /* Mobile */
+
+        @media (max-width: 600px) {
+
+            nav,
+            .home {
+                grid-template-columns: 1fr;
+            }
+
+            nav ul {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            .home {
                 text-align: center;
-                color: rgb(131, 131, 239);
-                padding-top: 8px;
             }
 
-            div{
-                background-color: rgb(240, 175, 175);
+            .skills,
+            .education,
+            .certifications,
+            .experience {
+                grid-template-columns: 1fr;
             }
 
-            ul{
-                display: flex;
-                justify-content: center;
-                gap: 60px;
-                list-style: none;
-                padding-bottom: 20px;
-                padding-top: 20px;
-                font-family: cursive;
-            }
+        }
 
-            a{
-                text-decoration: none;
-                color: black;
-            }
+    </style>
 
-           section
-           {
-                height: 600px;
-                padding-top: 30px;
-                text-align: center;
-            }
+</head>
 
-            #home{
-                background-color: lightcoral;
-            }
 
-            #about{
-                background-color: lightblue;
-            }
+<body>
 
-            #qualifications{
-                background-color: lightgreen;
-            }
 
-            #skills{
-                background-color: lightyellow;
-            }
+    <!-- Navigation -->
 
-            #projects{
-                background-color: plum;
-            }
-        </style>
-    </head>
+    <nav>
 
-    <body>
+        <h2>Mahi Jain</h2>
 
-        <!-- Menu -->
+        <ul>
+
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+
+            <li>
+                <a href="#education">Education</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+
+    <!-- Home -->
+
+    <section class="home" id="home">
+
         <div>
-            <h1><u><b>Bhavya Bajaj Portfolio</b></u></h1>
 
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#qualifications">Qualifications</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-            </ul>
+            <h1>Hello, I am Mahi Jain</h1>
+
+            <p>
+                Video Editor | Adobe Premiere Pro &
+                After Effects Specialist
+            </p>
+
+            <p>
+                Content Writer and Poem Writer
+            </p>
+
+            <p>
+                BCA Graduate and a keen learner
+                interested in gaining experience.
+            </p>
+
         </div>
 
 
-        <!-- Home -->
-        <section id="home">
-            <h2>Home</h2>
-            <p>Welcome to my portfolio.</p>
-        </section>
+        <div class="photo">
+
+            🎬
+
+        </div>
+
+    </section>
 
 
-        <!-- About -->
-        <section id="about">
-            <h2>About</h2>
-            <p>This is my about section.</p>
-        </section>
+
+    <!-- About -->
+
+    <section class="about" id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            I am a BCA graduate looking for a job in
+            video editing and jobs related to my course.
+        </p>
+
+        <p>
+            I am also interested in opportunities as
+            a data entry operator.
+        </p>
+
+        <p>
+            I am a fresher who wants to gain experience.
+            I am a keen learner and love to work and learn
+            new things to increase my knowledge.
+        </p>
+
+    </section>
 
 
-        <!-- Qualifications -->
-        <section id="qualifications">
-            <h2>Qualifications</h2>
-            <p>My educational qualifications.</p>
-        </section>
+
+    <!-- Skills -->
+
+    <section id="skills">
+
+        <h2 style="text-align:center;">
+            My Skills
+        </h2>
+
+        <div class="skills">
 
 
-        <!-- Skills -->
-        <section id="skills">
-            <h2>Skills</h2>
-            <p>My skills are HTML, CSS and Python.</p>
-        </section>
+            <div class="skill">
+
+                <h3>Video Editing</h3>
+
+                <p>
+                    Adobe Premiere Pro
+                </p>
+
+                <p>
+                    After Effects
+                </p>
+
+            </div>
 
 
-        <!-- Projects -->
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>These are my projects.</p>
-        </section>
+            <div class="skill">
 
-    </body>
+                <h3>Mobile Editing</h3>
+
+                <p>
+                    VN
+                </p>
+
+                <p>
+                    CapCut
+                </p>
+
+            </div>
+
+
+            <div class="skill">
+
+                <h3>Programming</h3>
+
+                <p>
+                    Python
+                </p>
+
+                <p>
+                    C++, HTML, SQL
+                </p>
+
+            </div>
+
+
+            <div class="skill">
+
+                <h3>Content Writing</h3>
+
+                <p>
+                    Content Writing
+                </p>
+
+                <p>
+                    Poem Writing
+                </p>
+
+            </div>
+
+
+            <div class="skill">
+
+                <h3>Communication</h3>
+
+                <p>
+                    Strong communication
+                    and interpersonal skills
+                </p>
+
+            </div>
+
+
+            <div class="skill">
+
+                <h3>Teamwork</h3>
+
+                <p>
+                    Ability to work independently
+                    and as part of a team
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Education -->
+
+    <section id="education">
+
+        <h2 style="text-align:center;">
+            Education
+        </h2>
+
+        <div class="education">
+
+
+            <div class="education-box">
+
+                <h3>Bachelor of Computer Application</h3>
+
+                <p>
+                    2023 - 2026
+                </p>
+
+                <p>
+                    Shri Vaishnav Institute of Management,
+                    Indore
+                </p>
+
+                <p>
+                    Last year at Sankar College of
+                    Professional Studies, Indore
+                </p>
+
+            </div>
+
+
+            <div class="education-box">
+
+                <h3>Schooling</h3>
+
+                <p>
+                    Vidhyanjali International School
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Certifications -->
+
+    <section id="certifications">
+
+        <h2 style="text-align:center;">
+            Certifications
+        </h2>
+
+        <div class="certifications">
+
+
+            <div class="certificate">
+
+                <h3>CCNA</h3>
+
+                <p>
+                    Cisco Certified Network Administrator
+                </p>
+
+                <p>
+                    iTrainU
+                </p>
+
+            </div>
+
+
+            <div class="certificate">
+
+                <h3>RHCSA</h3>
+
+                <p>
+                    Red Hat Certified System Administrator
+                </p>
+
+                <p>
+                    iTrainU
+                </p>
+
+            </div>
+
+
+            <div class="certificate">
+
+                <h3>MCSE</h3>
+
+                <p>
+                    Microsoft Certified Solutions Expert
+                </p>
+
+                <p>
+                    iTrainU
+                </p>
+
+            </div>
+
+
+            <div class="certificate">
+
+                <h3>Cybersecurity</h3>
+
+                <p>
+                    Cybersecurity Job Simulator
+                </p>
+
+                <p>
+                    Forage
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Internships -->
+
+    <section id="experience">
+
+        <h2 style="text-align:center;">
+            Internships & Projects
+        </h2>
+
+        <div class="experience">
+
+
+            <div class="experience-box">
+
+                <h3>Content Writing Intern</h3>
+
+                <p>
+                    Content Writing Internship
+                    at Youvah.
+                </p>
+
+            </div>
+
+
+            <div class="experience-box">
+
+                <h3>Digital Marketing Intern</h3>
+
+                <p>
+                    Digital Marketing Internship
+                    at Simplilearn.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Extracurricular Activities -->
+
+    <section class="activities">
+
+        <h2>Extracurricular Activities</h2>
+
+        <ul>
+
+            <li>
+                Leadership roles in college events
+                and projects
+            </li>
+
+            <li>
+                Volunteering in multiple college events
+            </li>
+
+        </ul>
+
+    </section>
+
+
+
+    <!-- Contact -->
+
+    <section class="contact" id="contact">
+
+        <h2>Contact Me</h2>
+
+        <p>
+            📍 Indore
+        </p>
+
+        <p>
+            📞 +91 8959808050
+        </p>
+
+        <p>
+            ✉️ mahirjain206@gmail.com
+        </p>
+
+    </section>
+
+
+</body>
 </html>
