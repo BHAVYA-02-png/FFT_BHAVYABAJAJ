@@ -1,0 +1,320 @@
+<html>
+<head>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        margin: 0px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+    h1 {
+        text-align: center;
+        padding-top: 5px;
+        font-family: Verdana;
+        color: #5a4a7a;
+        text-shadow: 2px 4px 8px #d8cdf0;
+    }
+    header {
+        background: #c9e9dd;
+        padding-bottom: 10px;
+        position: sticky;   
+        top: 0px;
+        z-index: 10;
+    }
+    li {
+        color: #4a4a4a;
+        margin-bottom: 10px;
+    }
+    a {
+        color: #4a4a4a;
+        text-decoration: none;
+    }
+    h2 {
+        text-align: center;
+        color: #8a6fb5;
+        font-family: cursive;
+    }
+    h3 {
+        text-align: center;
+        color: #c98a8a;
+        font-family: cursive;
+    }
+    section {
+        padding: 20px;
+        min-height: 100vh;
+        box-sizing: border-box;
+    }
+    img {
+        width: 300px;
+        height: 200px;
+        margin: 10px;
+    }
+    table {
+        margin: auto;
+        background-color: #cdeedd;
+    }
+    /* Different Background Colors */
+    #home {
+        background-color: #fbe4ef;
+    }
+    #about {
+        background-color: #fdead9;
+    }
+    #faculty {
+        background-color: #ece4fb;
+    }
+    #courses {
+        background-color: #e2f7e6;
+    }
+    #timetable {
+        background-color: #fdf6dd;
+    }
+    #achievements {
+        background-color: #fbe3ea;
+    }
+    #events {
+        background-color: #dff0fb;
+    }
+    #contact {
+        background-color: #eeeeee;
+    }
+    /* Moving Words */
+    .moving {
+        color: #c98a8a;
+        font-size: 20px;
+        font-family: Verdana;
+        position: relative;
+        animation: move 8s linear infinite;
+    }
+    @keyframes move {
+        0% {
+            left: 0px;
+        }
+        50% {
+            left: 300px;
+        }
+        100% {
+            left: 0px;
+        }
+    }
+    .collage {
+        width: 600px;
+        height: 300px;
+        border-radius: 10%;
+        margin-left: 450px;
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>Semantic Dep Website</h1>
+    <nav>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Department</a></li>
+        <li><a href="#faculty">Faculty</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#timetable">Time table</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </nav>
+</header>
+<!-- HOME -->
+<section id="home">
+    <h2>Home</h2>
+    <img class= "collage", src="https://i.pinimg.com/736x/54/5b/2c/545b2c7d6bf05dd7bd12a749053fe2b1.jpg">
+    <p>
+        The Department of Computer Applications provides students with
+        knowledge in computer applications, programming and information technology.
+    </p>
+    <p>
+        Students get opportunities to learn modern technologies through
+        practical classes, projects, workshops and technical activities.
+    </p>
+    <h3 class="moving">Welcome to Alliance University</h3>
+    <h3>Highlights</h3>
+    <ul>
+        <li>Programming</li>
+        <li>Web Development</li>
+        <li>Database Management</li>
+        <li>Computer Networks</li>
+    </ul>
+</section>
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Department</h2>
+    <img class="collage" src="https://i.pinimg.com/736x/e6/04/7a/e6047ad7beefc1cd22a43d030a1b39c0.jpg">
+    <p>
+        The Department of Computer Applications focuses on developing
+        technical knowledge, problem solving skills and practical abilities.
+    </p>
+    <p>
+        Students learn programming, database management, web technologies,
+        software development and other important computer technologies.
+    </p>
+    <h3 class="moving">Learn </h3>
+    <h3>Department Highlights</h3>
+    <ul>
+        <li>Practical Learning</li>
+        <li>Technical Workshops</li>
+        <li>Project Based Learning</li>
+        <li>Programming Activities</li>
+    </ul>
+</section>
+<!-- FACULTY -->
+<section id="faculty">
+    <h2>Faculty</h2>
+    <h3>Our Faculty Members</h3>
+    <img class="collage" src="https://www.alliance.edu.in/wp-content/uploads/faculty/core-faculty/prof-radha-r-17-02-2022.jpg">
+    <p>
+        <b>Prof. Radha R</b><br>
+        Assistant Professor with experience in teaching and guiding students
+        in computer applications and related subjects.
+    </p>
+    <img class="collage" src="https://media.licdn.com/dms/image/v2/D5603AQHvbUIl4xvSIg/profile-displayphoto-scale_200_200/B56Zo1ufJqI4AY-/0/1761837971200?e=2147483647&v=beta&t=aTmBALDvslD4ez0LR9ZDW4DcshUOCD7Mznt2NXxx1bo">
+    <p>
+        <b>Dr. Jeevanandam J</b><br>
+        Professor who supports students through academic guidance,
+        research activities and technical learning.
+    </p>
+    <h3 class="moving"> Guidance </h3>
+</section>
+<!-- COURSES -->
+<section id="courses">
+    <h2>Courses</h2>
+    <img class="collage" src="https://i.pinimg.com/736x/09/80/a4/0980a46e66b85dd9cc2eaac92c161af6.jpg">
+    <h3>MCA</h3>
+    <p>
+        Master of Computer Applications focuses on programming, software
+        development, databases, web technologies and computer networks.
+    </p>
+    <h3>MBA</h3>
+    <p>
+        Master of Business Administration develops management and leadership
+        skills with subjects such as finance, marketing, business and strategy.
+    </p>
+    <h3>Liberal Arts</h3>
+    <p>
+        Liberal Arts provides knowledge across different subjects and encourages
+        creativity, communication, critical thinking and problem solving.
+    </p>
+    <h3>BBA</h3>
+    <p>
+        Bachelor of Business Administration introduces students to business,
+        management, marketing, finance and entrepreneurship.
+    </p>
+    <h3 class="moving"> Your Future</h3>
+</section>
+<!-- TIME TABLE -->
+<section id="timetable">
+    <h2>Time Table</h2>
+    <img class="collage" src="https://i.pinimg.com/736x/78/4d/0a/784d0adedf86dc2155bc567d9bea3199.jpg">
+    <table border="1" >
+        <tr>
+            <th>Day</th>
+            <th>9:00 - 10:00</th>
+            <th>10:00 - 11:00</th>
+            <th>11:15 - 12:15</th>
+            <th>1:15 - 2:15</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>Python</td>
+            <td>DBMS</td>
+            <td>Web Technology</td>
+            <td>Lab</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>Java</td>
+            <td>Networks</td>
+            <td>Python</td>
+            <td>Project</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>DBMS</td>
+            <td>Java</td>
+            <td>Software Engineering</td>
+            <td>Lab</td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td>Web Technology</td>
+            <td>Python</td>
+            <td>DBMS</td>
+            <td>Project</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td>Networks</td>
+            <td>Java</td>
+            <td>Lab</td>
+            <td>Seminar</td>
+        </tr>
+    </table>
+    <h3 class="moving">Study </h3>
+</section>
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+    <h2>Achievements</h2>
+    <img class="collage" src="https://i.pinimg.com/736x/13/1c/35/131c3593f0a7759f37297cee93438a3a.jpg">
+    <p>
+        Students have participated in coding competitions, technical events,
+        project exhibitions and academic activities at university level.
+    </p>
+    <h3>Student Achievements</h3>
+    <ul>
+        <li>Students participated in coding competitions and hackathons.</li>
+        <li>Students presented innovative projects in technical exhibitions.</li>
+        <li>Students completed professional technical certifications.</li>
+        <li>Students participated in seminars and technical workshops.</li>
+        <li>Students developed projects using modern technologies.</li>
+    </ul>
+    <h3 class="moving"> Achieve</h3>
+</section>
+<!-- EVENTS -->
+<section id="events">
+    <h2>Events</h2>
+    <img class="collage" src="https://i.pinimg.com/736x/2b/66/26/2b66267c3c3323a24826e4e39641019e.jpg">
+    <h3>Department Events</h3>
+    <p>
+        The department conducts technical and academic events that help
+        students improve their knowledge, creativity and communication skills.
+    </p>
+    <ul>
+        <li>Technical Workshops</li>
+        <li>Coding Competitions</li>
+        <li>Project Expo</li>
+        <li>Guest Lectures</li>
+        <li>Seminars</li>
+        <li>Hackathons</li>
+    </ul>
+    <h3 class="moving"> Participate </h3>
+</section>
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact</h2>
+    <img class="collage" src="https://i.pinimg.com/1200x/ed/0e/df/ed0edf663ce59923456111c22d12cea9.jpg">
+    <h3>Alliance University</h3>
+    <p>
+        Alliance University<br>
+        Bengaluru, Karnataka, India
+    </p>
+    <p>
+        Department of Computer Applications<br>
+        Email: info@alliance.edu.in
+    </p>
+    <h3>Visit Us</h3>
+    <p>
+        Students can contact the university for information about
+        admissions, courses, academic programs and department activities.
+    </p>
+    <h3 class="moving">Thank You for Visiting</h3>
+</section>
+</body>
+</html>
